@@ -48,5 +48,10 @@ public class Article {
 			this.content = content;
 		}
 	}
+	
+	public String printArticle()
+	{
+		return title + "\n" + content;
+	}
 
 }

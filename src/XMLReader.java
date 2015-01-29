@@ -62,18 +62,7 @@ public class XMLReader {
 				}
 			}
 			Iterator<Article> it = articles.iterator();
-			int counter = 0;
-			while (it.hasNext()) 
-			{
-				counter++;
-
-				Article art = it.next();
-				if (counter == num) 
-				{
-					System.out.println("CLANAK " + counter + "\n" + art.toString() + "\n\n");
-					break;
-				}
-			}
+			System.out.println(articles.get(num).printArticle());
 			
 		} catch (ParserConfigurationException e) {
 			// TODO Auto-generated catch block
